@@ -1,0 +1,29 @@
+<h2>Update the room</h2>
+
+<form action="/rooms/{{_id}}/edit" method="post">
+
+  <label for="name-input">Name:</label>
+  <input type="text" name="name" id="name-input" value="{{name}}" />
+
+  <label for="description">Description:</label>
+  <input
+    type="text"
+    name="description"
+    id="description-input"
+    value="{{description}}"
+  />
+
+  <label for="imgUrl">Images:</label>
+  <input type="text" name="imgUrl" id="imgUrl-input" value="{{imgUrl}}" />
+
+  {{!-- <select name="owner" id="owner-select">
+    <option disable selected value=""></option>
+    {{#each dbOwners}}
+      <option value="{{this._id}}"> {{this.owner}} </option>
+    {{/each}}
+  </select> --}}
+  <br />
+
+  <button type="submit">Save changes</button>
+
+</form>

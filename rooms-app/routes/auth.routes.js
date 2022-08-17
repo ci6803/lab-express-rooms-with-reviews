@@ -26,7 +26,7 @@ router.post("/signup", isLoggedOut, (req, res, next) => {
     })
     .then((userFromDB) => {
       //console.log("Newly created user is: ", userFromDB);
-      //req.session.currentUser = userFromDB;
+      req.session.currentUser = userFromDB;
       res.redirect("/userProfile");
     })
     .catch((error) => console.log(error));

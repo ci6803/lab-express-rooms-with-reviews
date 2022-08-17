@@ -1,0 +1,14 @@
+<h2>Rooms</h2>
+
+<ul>
+  {{#each allRooms}}
+    <li>
+      <h3>{{name}}</h3>
+      <p>Description: {{description}}</p>
+      <a href="/rooms/{{_id}}/edit">Edit</a>
+      <form action="/rooms/{{_id}}/delete" method="POST">
+        <button>Delete</button>
+      </form>
+    </li>
+  {{/each}}
+</ul>

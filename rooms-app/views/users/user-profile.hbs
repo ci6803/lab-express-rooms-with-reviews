@@ -3,6 +3,14 @@
 {{#if user}}
   <h2>Welcome, {{user.username}}!</h2>
   <p>This is your profile page my friend!</p>
+
+  <li id="to-right">
+    <a href="/rooms/create">Create a room</a>
+    <span> | </span>
+    <a href="/rooms/:id/edit">Edit a room</a>
+    <span> | </span>
+    <a href="/rooms">View rooms</a>
+  </li>
   <button>
     <a href="/user-profile">Reload the page</a>
   </button>

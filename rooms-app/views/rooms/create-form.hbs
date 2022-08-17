@@ -1,0 +1,20 @@
+<h2>Create a new room</h2>
+
+<form action="/rooms/create" method="post">
+
+  <label for="name-input">Name:</label>
+  <input type="text" name="name" id="name-input" required />
+
+  <label for="description">Description:</label>
+  <input type="text" name="description" id="description-input" required />
+
+  <label for="imgUrl">Images:</label>
+  <input type="text" name="imgUrl" id="imgUrl-input" required />
+
+  {{!-- <label for="owner">Owner:</label>
+  <input type="text" name="owner" id="owner-input" required /> --}}
+  <br />
+
+  <button type="submit">Create a new one</button>
+
+</form>
